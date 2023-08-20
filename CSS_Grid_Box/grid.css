@@ -1,0 +1,56 @@
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: cursive;
+}
+
+
+body{
+ width:100vw;
+ height: 100vh;
+display: grid;
+grid-template-areas: 
+'head head head'
+'nav content side'
+'foot foot foot';
+
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows:100px 1fr 50px;
+
+
+}
+
+
+
+header,nav,main ,aside,footer{
+ background-color:gray;
+ color: white;
+ padding: 30px;
+ border: 2px solid #fcfcfc;
+}
+
+header{
+ text-align: center;
+ grid-area: head;
+}
+
+nav{
+ text-align: center;
+ grid-area:nav;
+}
+
+main{
+ text-align: center;
+ grid-area:content;
+}
+
+aside{
+ text-align: center;
+ grid-area:side;
+}
+
+footer{
+ text-align: center;
+ grid-area: foot;
+} 

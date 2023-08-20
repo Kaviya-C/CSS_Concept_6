@@ -1,0 +1,62 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 900;
+}
+
+
+body{
+ width: 100vw;
+ height: 100vh;
+display: grid;
+grid-template-areas: 
+'nav nav nav'
+'head head head'
+'side main main'
+'aside-1 aside-2 aside-3'
+'foot foot foot';
+
+grid-template-rows: 50px 100px 1fr 250px 50px;
+grid-template-columns: 1fr  1fr 1fr;
+ 
+}
+
+
+header,nav,main,aside,footer{
+ border: 2px solid black;
+ color: white;
+ font-size: 15px;
+ text-align: center;
+ background-color: rgb(245, 224, 104);
+ padding: 30px;
+}
+
+nav{
+ grid-area: nav;
+}
+header{
+ grid-area: head;
+}
+main{
+ grid-area: main;
+}
+.one{
+ grid-area: side;
+}
+
+.two{
+ grid-area: aside-1;
+}
+
+.three{
+ grid-area:aside-2;
+}
+.four{
+ grid-area: aside-3;
+}
+
+footer{
+ grid-area: foot;
+}
